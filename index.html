@@ -353,13 +353,11 @@
       const url = window.location.href.split("/");
       var realUrl = "";
       url.forEach((itm, index)=>{
-        console.log(itm);
-        console.log(index);
         if(itm.includes("github")){
-          realUrl = itm;
+          realUrl = url[index+1];
         }
       })
-      // window.location.pathname = `${realUrl}/src/catalog.html`;
+      window.location.pathname = `${realUrl}/src/catalog.html`;
       });
 
       const allProd = document.querySelectorAll(".prod-card");
