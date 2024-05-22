@@ -19,13 +19,13 @@ rForm.addEventListener("submit", (e) => {
   e.preventDefault();
   localStorage.setItem("filter", `${rForm.children[0].value}`);
   const url = window.location.href.split("/");
-  var realUrl = "";
-  url.forEach(itm=>{
-    if(itm.includes("github")){
-      realUrl = itm;
-    }
-  })
-  window.location.pathname = `${realUrl}/src/catalog.html`;
+      var realUrl = "";
+      url.forEach((itm, index)=>{
+        if(itm.includes("github")){
+          realUrl = url[index+1];
+        }
+      })
+      window.location.pathname = `${realUrl}/src/catalog.html`;
 });
 
 const catalog = document.querySelector(".header-catalog");
