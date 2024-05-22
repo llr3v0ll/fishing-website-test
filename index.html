@@ -352,7 +352,9 @@
       button.addEventListener("click", () => {
       const url = window.location.href.split("/");
       var realUrl = "";
-      url.forEach(itm=>{
+      url.forEach((itm, index)=>{
+        console.log(itm);
+        console.log(index);
         if(itm.includes("github")){
           realUrl = itm;
         }
