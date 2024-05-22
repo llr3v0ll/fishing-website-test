@@ -1,0 +1,66 @@
+main {
+  width: 100%;
+}
+main h1 {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-top: 40px;
+}
+.collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5rem;
+  margin-top: 40px;
+}
+.collection h2 {
+  margin-bottom: 40px;
+}
+.prod-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  text-align: center;
+  padding: 15px 0 20px 0;
+  justify-content: space-between;
+}
+.prod-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prod-card a:hover .itm-title {
+  text-decoration: underline;
+}
+
+.prod-card img {
+  height: 240px;
+  width: 240px;
+  margin-bottom: 20px;
+}
+.products {
+  display: flex;
+}
+.products div:not(:last-child) {
+  margin-right: 30px;
+}
+.products button {
+  background-color: var(--primary);
+  color: white;
+  border: 2px solid var(--primary);
+  height: 40px;
+  border-radius: 6px;
+  width: 150px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 50ms;
+}
+.products button:active {
+  background-color: white;
+  color: var(--primary);
+}

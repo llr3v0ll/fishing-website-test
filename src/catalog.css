@@ -1,0 +1,121 @@
+main {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.products {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prod-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  text-align: center;
+  padding: 15px 0 20px 0;
+  justify-content: space-between;
+}
+.prod-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prod-card a:hover .itm-title {
+  text-decoration: underline;
+}
+
+.prod-card img {
+  height: 240px;
+  width: 240px;
+  margin-bottom: 20px;
+}
+.prod-card button {
+  background-color: var(--primary);
+  color: white;
+  border: 2px solid var(--primary);
+  height: 40px;
+  border-radius: 6px;
+  width: 150px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 50ms;
+}
+.prod-card button:active {
+  background-color: white;
+  color: var(--primary);
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header-catalog::before {
+  content: "";
+  position: absolute;
+  width: 100% !important;
+  height: 2px;
+  background-color: var(--primary) !important;
+  bottom: 0;
+  opacity: 0.5;
+}
+.hidden2 {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.arrow-ic {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  rotate: 180deg;
+  transition: 0.3s;
+  right: 15px;
+  top: 10px;
+  filter: brightness(0) saturate(100%) invert(28%) sepia(91%) saturate(1158%)
+    hue-rotate(174deg) brightness(101%) contrast(101%);
+}
+.cata-form select {
+  width: 200px;
+  outline: none;
+  background-color: white;
+  color: var(--text);
+  border: 2px solid var(--primary);
+  border-radius: 6px;
+  padding: 0 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: 220ms;
+  height: 40px;
+}
+.cata-form {
+  position: relative;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.search-form-wrapper {
+  z-index: 1 !important;
+}
+.cata-form input {
+  border: 2px solid var(--primary);
+  border-radius: 6px;
+  height: 40px;
+  padding: 0 25px;
+  outline: none;
+  color: var(--text);
+  width: 400px;
+}
+
+.cata-form input::-webkit-search-decoration,
+.cata-form input::-webkit-search-cancel-button,
+.cata-form input::-webkit-search-results-button,
+.cata-form input::-webkit-search-results-decoration {
+  display: none;
+}

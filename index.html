@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Blue Fish</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/icones-de-poisson-bleu.ico"
+    />
+    <link rel="stylesheet" href="src/home.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-wrap">
+        <a href="index.html" class="header-logo">
+          Blue Fish
+          <img src="assets/icones-de-poisson-bleu.png" alt="logo" />
+        </a>
+        <nav class="main-menu">
+          <ul id="header-list">
+            <li class="header-home"><a href="index.html">HOME</a></li>
+            <li class="header-catalog">
+              <a href="src/catalog.html">CATALOG</a>
+            </li>
+            <li class="header-about">
+              <a href="src/about_us.html">ABOUT US</a>
+            </li>
+            <li class="header-contant">
+              <a href="src/contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <svg
+            id="search_icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style="padding-left: 4px"
+          >
+            <path
+              d="M19.3359 18.2109L14.7344 13.6094C15.875 12.2188 16.5625 10.4375 16.5625 8.49609C16.5625 4.04297 12.9492 0.429688 8.49609 0.429688C4.03906 0.429688 0.429688 4.04297 0.429688 8.49609C0.429688 12.9492 4.03906 16.5625 8.49609 16.5625C10.4375 16.5625 12.2148 15.8789 13.6055 14.7383L18.207 19.3359C18.5195 19.6484 19.0234 19.6484 19.3359 19.3359C19.6484 19.0273 19.6484 18.5195 19.3359 18.2109ZM8.49609 14.957C4.92969 14.957 2.03125 12.0586 2.03125 8.49609C2.03125 4.93359 4.92969 2.03125 8.49609 2.03125C12.0586 2.03125 14.9609 4.93359 14.9609 8.49609C14.9609 12.0586 12.0586 14.957 8.49609 14.957Z"
+              fill="currentColor"
+            />
+          </svg>
+          <a href="src/cart.html" class="cart-link">
+            <svg
+              class="cart-svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="padding: 4px 0 0 2px"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="margin-top: -2px"
+            >
+              <g clip-path="url(#clip0_1_15)">
+                <path
+                  d="M9.60001 24C8.27664 24 7.20001 22.9233 7.20001 21.6C7.20001 20.2766 8.27664 19.2 9.60001 19.2C10.9234 19.2 12 20.2766 12 21.6C12 22.9233 10.9234 24 9.60001 24ZM9.60001 20.4C8.93832 20.4 8.40001 20.9383 8.40001 21.6C8.40001 22.2616 8.93832 22.8 9.60001 22.8C10.2617 22.8 10.8 22.2616 10.8 21.6C10.8 20.9383 10.2617 20.4 9.60001 20.4Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M18 24C16.6766 24 15.6 22.9233 15.6 21.6C15.6 20.2766 16.6766 19.2 18 19.2C19.3234 19.2 20.4 20.2766 20.4 21.6C20.4 22.9233 19.3234 24 18 24ZM18 20.4C17.3383 20.4 16.8 20.9383 16.8 21.6C16.8 22.2616 17.3383 22.8 18 22.8C18.6617 22.8 19.2 22.2616 19.2 21.6C19.2 20.9383 18.6617 20.4 18 20.4Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M21.0474 5.35978C20.746 5.00397 20.2913 4.7999 19.8 4.7999H5.10831L4.98913 4.08492C4.83163 3.14004 3.95793 2.3999 3.00001 2.3999H1.80001C1.46865 2.3999 1.20001 2.66854 1.20001 2.9999C1.20001 3.33126 1.46865 3.5999 1.80001 3.5999H3.00001C3.3685 3.5999 3.74488 3.91872 3.80547 4.28221L5.81092 16.3149C5.96837 17.2598 6.8421 17.9999 7.79999 17.9999H19.8C20.1314 17.9999 20.4 17.7313 20.4 17.3999C20.4 17.0685 20.1314 16.7999 19.8 16.7999H7.79999C7.4315 16.7999 7.05512 16.4811 6.99454 16.1176L6.69852 14.3414L18.6565 13.3016C19.5867 13.2207 20.4355 12.4359 20.5891 11.5149L21.3945 6.68221C21.4753 6.1976 21.3488 5.71558 21.0474 5.35978H21.0474ZM20.2109 6.48492L19.4054 11.3176C19.3422 11.6969 18.9357 12.0728 18.5525 12.1061L6.50066 13.1541L5.3083 5.99993H19.8C19.9399 5.99993 20.0577 6.04807 20.1318 6.13544C20.2058 6.22286 20.2339 6.34694 20.2109 6.48494L20.2109 6.48492Z"
+                  fill="currentColor"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_15">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="cart-number">0</p>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- SEARCH FORM -->
+    <div class="search-form-wrapper">
+      <form class="search-form-header">
+        <input type="text" placeholder="Search" />
+        <input type="submit" value="Search" id="search-input" />
+        <label class="search-label" for="search-input">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.3359 18.2109L14.7344 13.6094C15.875 12.2188 16.5625 10.4375 16.5625 8.49609C16.5625 4.04297 12.9492 0.429688 8.49609 0.429688C4.03906 0.429688 0.429688 4.04297 0.429688 8.49609C0.429688 12.9492 4.03906 16.5625 8.49609 16.5625C10.4375 16.5625 12.2148 15.8789 13.6055 14.7383L18.207 19.3359C18.5195 19.6484 19.0234 19.6484 19.3359 19.3359C19.6484 19.0273 19.6484 18.5195 19.3359 18.2109ZM8.49609 14.957C4.92969 14.957 2.03125 12.0586 2.03125 8.49609C2.03125 4.93359 4.92969 2.03125 8.49609 2.03125C12.0586 2.03125 14.9609 4.93359 14.9609 8.49609C14.9609 12.0586 12.0586 14.957 8.49609 14.957Z"
+              fill="currentColor"
+            />
+          </svg>
+        </label>
+      </form>
+    </div>
+    <!-- END OF SEARCH FORM -->
+    <main>
+      <div class="banner">
+        <div class="text-content">
+          <h1>MEGA SALES</h1>
+          <p>Don't miss out on the <span>NEW</span> promotions!</p>
+          <button id="shopnow">SHOP NOW</button>
+        </div>
+      </div>
+      <div class="specials">
+        <div class="spec-wrapper">
+          <div class="card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Layer_1"
+              data-name="Layer 1"
+              viewBox="0 0 24 24"
+              width="512"
+              height="512"
+            >
+              <path
+                d="M18,12c0,.552-.448,1-1,1s-1-.448-1-1,.448-1,1-1,1,.448,1,1ZM7,5c.552,0,1-.447,1-1,0-1.103,.897-2,2-2s2,.897,2,2c0,.553,.448,1,1,1s1-.447,1-1c0-2.206-1.794-4-4-4S6,1.794,6,4c0,.553,.448,1,1,1ZM24,13v2c0,1.106-.748,1.779-1.568,1.954-.661,1.654-1.872,3.051-3.432,3.954v.092c0,1.654-1.346,3-3,3-1.304,0-2.416-.836-2.829-2h-2.343c-.413,1.164-1.525,2-2.829,2-1.654,0-3-1.346-3-3v-.079c-2.635-1.519-4.182-4.377-3.983-7.451,.063-.978,.31-1.907,.705-2.756-1.017-.481-1.723-1.516-1.723-2.714,0-1.654,1.346-3,3-3,.552,0,1,.447,1,1s-.448,1-1,1-1,.448-1,1c0,.491,.356,.9,.823,.984,1.521-1.823,3.853-2.984,6.443-2.984h5.363c.733-1.478,2.102-2.512,3.927-2.946,.591-.139,1.203-.003,1.681,.374,.485,.384,.764,.958,.764,1.576v3.715c.608,.691,1.094,1.481,1.432,2.327,.821,.175,1.568,.848,1.568,1.954Zm-2,0h-.294c-.442,0-.832-.291-.958-.715-.274-.92-.78-1.776-1.463-2.477-.183-.187-.285-.438-.285-.698V5.004c-.975,.232-2.265,.83-2.764,2.335-.141,.423-.553,.714-.99,.684-.068-.003-5.98-.022-5.98-.022-3.303,0-6.05,2.459-6.253,5.599-.16,2.469,1.181,4.752,3.417,5.815,.349,.166,.57,.518,.57,.903v.683c0,.552,.449,1,1,1s1-.448,1-1,.448-1,1-1h4c.552,0,1,.447,1,1s.449,1,1,1,1-.448,1-1v-.694c0-.385,.221-.736,.569-.902,1.542-.736,2.7-2.081,3.179-3.688,.126-.424,.516-.715,.958-.715h.294v-2Z"
+              />
+            </svg>
+            <div class="card-txt">
+              <p>We try to offer the</p>
+              <h2>BEST PRICES</h2>
+              <p>on all our producs.</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Layer_1"
+              data-name="Layer 1"
+              viewBox="0 0 24 24"
+              width="512"
+              height="512"
+            >
+              <path
+                d="M19,5H17V4a3,3,0,0,0-3-3H3A3,3,0,0,0,0,4V19H2.041A3.465,3.465,0,0,0,2,19.5a3.5,3.5,0,0,0,7,0,3.465,3.465,0,0,0-.041-.5h6.082a3.465,3.465,0,0,0-.041.5,3.5,3.5,0,0,0,7,0,3.465,3.465,0,0,0-.041-.5H24V10A5.006,5.006,0,0,0,19,5Zm0,2a3,3,0,0,1,3,3v1H17V7ZM7,19.5a1.5,1.5,0,0,1-3,0,1.418,1.418,0,0,1,.093-.5H6.907A1.418,1.418,0,0,1,7,19.5ZM15,17H2V4A1,1,0,0,1,3,3H14a1,1,0,0,1,1,1Zm5,2.5a1.5,1.5,0,0,1-3,0,1.41,1.41,0,0,1,.093-.5h2.814A1.41,1.41,0,0,1,20,19.5ZM17,17V13h5v4Z"
+              />
+            </svg>
+            <div class="card-txt">
+              <p>Anywhere in the world</p>
+              <h2>FREE SHIPPING</h2>
+              <p>on orders above $50.</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Layer_1"
+              data-name="Layer 1"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m22,12h2c0,6.617-5.383,12-12,12-4.055,0-7.794-2.058-9.995-5.368l-.005,2.368H0v-3.991c0-1.107.901-2.009,2.008-2.009h3.992v2h-2.637c1.776,3.06,5.052,5,8.637,5,5.514,0,10-4.486,10-10Zm0-9l-.005,2.353C19.806,2.04,16.106,0,12,0,5.383,0,0,5.383,0,12h2C2,6.486,6.486,2,12,2c3.64,0,6.9,1.921,8.666,5h-2.666v2h3.991c1.107,0,2.009-.901,2.009-2.009v-3.991h-2Zm-5,14H7v-7.5c0-1.379,1.122-2.5,2.5-2.5h5c1.379,0,2.5,1.121,2.5,2.5v7.5Zm-2-7.5c0-.275-.225-.5-.5-.5h-5c-.276,0-.5.225-.5.5v5.5h6v-5.5Zm-4.5,2.5h3v-2h-3v2Z"
+              />
+            </svg>
+            <div class="card-txt">
+              <p>If you don't like our products</p>
+              <h2>FREE RETURNS</h2>
+              <p>2 weeks return term.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collection">
+        <h2>NEW ARRIVALS</h2>
+        <div class="products">
+          <div class="prod-card">
+            <a href="src/product.html">
+              <img
+                src="https://assets.basspro.com/image/upload/c_limit,dpr_1.0,f_auto,h_957,q_auto,w_2000/c_limit,h_957,w_2000/v1/ProductImages/151/master1_101474638_main?pgw=1"
+              />
+              <p class="itm-title">
+                Daiwa BG/Offshore Angler Gold Cup Inshore Spinning Combo
+              </p>
+              <p class="price">$149.98</p>
+            </a>
+            <button>Add To Cart</button>
+          </div>
+          <div class="prod-card">
+            <a href="src/product.html">
+              <img
+                src="https://assets.basspro.com/image/upload/c_limit,dpr_1.0,f_auto,h_957,q_auto,w_2000/c_limit,h_957,w_2000/v1/ProductImages/100/blackblue_101461185_main?pgw=1"
+              />
+              <p class="itm-title">XPS Swim Jig</p>
+              <p class="price">$3.99</p>
+            </a>
+            <button>Add To Cart</button>
+          </div>
+          <div class="prod-card">
+            <a href="src/product.html">
+              <img
+                src="https://assets.basspro.com/image/upload/c_limit,dpr_1.0,f_auto,h_957,q_auto,w_2000/c_limit,h_957,w_2000/v1/ProductImages/100/chromee_10215489_main?pgw=1"
+              />
+              <p class="itm-title">
+                Rapala Rippin' Rap Rattling Lipless Crankbait
+              </p>
+              <p class="price">$5.78</p>
+            </a>
+            <button>Add To Cart</button>
+          </div>
+          <div class="prod-card">
+            <a href="src/product.html">
+              <img
+                src="https://assets.basspro.com/image/upload/c_limit,dpr_1.0,f_auto,h_957,q_auto,w_2000/c_limit,h_957,w_2000/v1/ProductImages/100/camo_11090205012219_main?pgw=1"
+              />
+              <p class="itm-title">Crappie Maxx Camo Fishing Line</p>
+              <p class="price">$8.99</p>
+            </a>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="cat-collection">
+        <a
+          href="src/customer-favorites.html"
+          class="collection-card col-card-1"
+        >
+          <img src="assets/gaspar-zaldo--Ja4Mk8tEfI-unsplash.jpg" />
+          <p>CUSTOMER FAVORITES</p>
+        </a>
+        <a href="src/sales.html" class="collection-card col-card-2">
+          <img src="assets/clay-banks-CSWcIdRcQI0-unsplash.jpg" />
+          <p>SALES</p>
+        </a>
+        <a href="src/limited-edition.html" class="collection-card col-card-3">
+          <img src="assets/anne-nygard-hfrWOhXxwHY-unsplash.jpg" />
+          <p>LIMITED EDITION</p>
+        </a>
+      </div>
+      <div class="description">
+        <div class="desc-wrapper">
+          <section>
+            <h3>Our Passion for Fishing</h3>
+            <p>
+              Behind every great fishing website is a team of dedicated
+              individuals who live and breathe the sport. Our team is comprised
+              of seasoned anglers, outdoor enthusiasts, and industry experts who
+              bring a wealth of knowledge, experience, and passion to everything
+              we do. From product sourcing and quality control to customer
+              support and community engagement, our team works tirelessly to
+              ensure that every aspect of your experience with us is nothing
+              short of exceptional. With a shared commitment to promoting
+              sustainable fishing practices and fostering a sense of camaraderie
+              among fellow anglers, we're proud to be your trusted partner on
+              your fishing journey
+            </p>
+          </section>
+          <section>
+            <h3>Quality Products, Unmatched Performance</h3>
+            <p>
+              When it comes to fishing, quality matters – and at BlueFish,
+              quality is our top priority. We meticulously hand-select each
+              product in our inventory, partnering with industry-leading brands
+              and manufacturers to bring you the finest fishing gear and
+              accessories on the market. Whether you're in need of a reliable
+              rod and reel combo, premium fishing tackle, or cutting-edge
+              angling technology, you'll find everything you need and more in
+              our extensive collection. Plus, with our unwavering commitment to
+              customer service, hassle-free returns, and lightning-fast
+              shipping, you can shop with confidence, knowing that your
+              satisfaction is always guaranteed.
+            </p>
+          </section>
+          <section>
+            <h3>Empowering Anglers, Every Step of the Way</h3>
+            <p>
+              At BlueFish, we believe that fishing is more than just a hobby –
+              it's a way of life. That's why we're dedicated to providing
+              anglers of all skill levels with the knowledge, resources, and
+              inspiration they need to succeed on the water. From informative
+              blog posts and how-to guides to in-depth product reviews and
+              expert tips, our website is a treasure trove of valuable
+              information designed to help you take your fishing game to the
+              next level. Whether you're looking to master new techniques,
+              explore different fishing destinations, or simply connect with
+              fellow anglers who share your passion, you'll find everything you
+              need to thrive in our vibrant online community.
+            </p>
+          </section>
+          <section>
+            <h3>Join Our Fishing Community</h3>
+            <p>
+              Connect with Like-Minded Anglers. Fishing is more than just a
+              solitary pursuit – it's an opportunity to connect, share, and grow
+              alongside fellow anglers who share your passion for the sport. At
+              BlueFish, we understand the importance of community in the world
+              of fishing, which is why we've created a welcoming space where
+              anglers from all walks of life can come together to share their
+              experiences, swap stories, and forge meaningful connections.
+              Whether you're a seasoned angler with years of experience to share
+              or a newcomer looking to learn from those who have come before,
+              our fishing community is here to welcome you with open arms. Join
+              us today and become part of something truly special.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-wrap">
+        <div class="section-1">
+          <a href="index.html"
+            ><img
+              src="assets/icones-de-poisson-bleu.png"
+              alt="logo"
+              class="footer-logo"
+              style="
+                width: 150px;
+                filter: brightness(0) saturate(100%) invert(28%) sepia(91%)
+                  saturate(1158%) hue-rotate(174deg) brightness(101%)
+                  contrast(101%);
+                height: 140px;
+              "
+          /></a>
+          <div class="footer_address">
+            <p>685 Market Street</p>
+            <p>United States</p>
+          </div>
+          <div class="footer_contact">
+            <p>Call us:1.800.000.6690</p>
+            <p>Email: contact@bluefish.com</p>
+          </div>
+        </div>
+        <div class="section_2">
+          <h3>Newsletter Sign Up</h3>
+          <p>Receive our latest updates about our products and promotions.</p>
+          <form id="newsletter">
+            <input type="email" placeholder="Email" required />
+            <button type="submit">Subscribe Now</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="src/header.js"></script>
+    <script src="src/footer.js"></script>
+    <script>
+      const button = document.querySelector("#shopnow");
+      button.addEventListener("click", () => {
+        window.location.pathname = "src/catalog.html";
+      });
+
+      const allProd = document.querySelectorAll(".prod-card");
+      allProd.forEach((prodCard) => {
+        prodCard.children[0].addEventListener("click", (event) => {
+          var itmName = event.currentTarget.children[1].innerText;
+          localStorage.setItem("product", itmName);
+        });
+      });
+      allProd.forEach((prodCard) => {
+        prodCard.children[1].addEventListener("click", (event) => {
+          const cartAr = JSON.parse(localStorage.getItem("cart")) || [];
+          const item =
+            event.target.parentNode.children[0].children[1].innerText;
+          const quantity = 1;
+          cartPush(cartAr, item, quantity);
+          updateCartNum();
+        });
+      });
+    </script>
+  </body>
+</html>

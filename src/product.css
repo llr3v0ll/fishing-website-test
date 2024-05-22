@@ -1,0 +1,137 @@
+.header-catalog::before {
+  content: "";
+  position: absolute;
+  width: 100% !important;
+  height: 2px;
+  background-color: var(--primary) !important;
+  bottom: 0;
+  opacity: 0.5;
+}
+main {
+  width: 100%;
+}
+main .wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper h2 {
+  max-width: 685px;
+  text-align: center;
+}
+.wrapper .content {
+  display: flex;
+  margin-top: 30px;
+}
+.left {
+  width: min-content;
+  margin-right: 60px;
+  height: 685px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid var(--primary);
+}
+.left img {
+  width: 685px;
+  height: 685px;
+}
+.right {
+  width: 100%;
+}
+.buy {
+  background-color: #0076b61f;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.buy .lin-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quantity,
+.buy button {
+  width: 250px;
+  box-sizing: border-box;
+  align-self: center;
+}
+.buy button {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  transition: 50ms;
+}
+.buy button:active {
+  background-color: white;
+  color: var(--primary);
+}
+.buy label {
+  margin-top: 2rem;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+}
+.buy input {
+  height: 40px;
+  outline: none;
+  border: 2px solid var(--primary);
+  background-color: white;
+  text-align: center;
+  width: 50px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  caret-color: transparent;
+  cursor: default;
+}
+.quantity button {
+  width: 50px;
+  padding: 0 !important;
+  height: 44px;
+}
+#decrease {
+  border-radius: 8px 0 0 8px;
+}
+#increase {
+  border-radius: 0 8px 8px 0;
+}
+.right ul {
+  margin-top: 80px;
+}
+.right li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+.right li:not(:last-child) {
+  border-bottom: 2px solid var(--primary);
+}
+.right li img {
+  margin-right: 1rem;
+}
+
+.description {
+  margin: 2rem 0 4rem 0;
+}
+.description h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}

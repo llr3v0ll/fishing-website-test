@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icones-de-poisson-bleu.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-wrap">
+        <a href="../index.html" class="header-logo">
+          Blue Fish
+          <img src="../assets/icones-de-poisson-bleu.png" alt="logo" />
+        </a>
+        <nav class="main-menu">
+          <ul id="header-list">
+            <li class="header-home"><a href="../index.html">HOME</a></li>
+            <li class="header-catalog"><a href="catalog.html">CATALOG</a></li>
+            <li class="header-about"><a href="about_us.html">ABOUT US</a></li>
+            <li class="header-contant">
+              <a href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <svg
+            id="search_icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style="padding-left: 4px"
+          >
+            <path
+              d="M19.3359 18.2109L14.7344 13.6094C15.875 12.2188 16.5625 10.4375 16.5625 8.49609C16.5625 4.04297 12.9492 0.429688 8.49609 0.429688C4.03906 0.429688 0.429688 4.04297 0.429688 8.49609C0.429688 12.9492 4.03906 16.5625 8.49609 16.5625C10.4375 16.5625 12.2148 15.8789 13.6055 14.7383L18.207 19.3359C18.5195 19.6484 19.0234 19.6484 19.3359 19.3359C19.6484 19.0273 19.6484 18.5195 19.3359 18.2109ZM8.49609 14.957C4.92969 14.957 2.03125 12.0586 2.03125 8.49609C2.03125 4.93359 4.92969 2.03125 8.49609 2.03125C12.0586 2.03125 14.9609 4.93359 14.9609 8.49609C14.9609 12.0586 12.0586 14.957 8.49609 14.957Z"
+              fill="currentColor"
+            />
+          </svg>
+          <a href="cart.html" class="cart-link">
+            <svg
+              class="cart-svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              style="padding: 4px 0 0 2px"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="margin-top: -2px"
+            >
+              <g clip-path="url(#clip0_1_15)">
+                <path
+                  d="M9.60001 24C8.27664 24 7.20001 22.9233 7.20001 21.6C7.20001 20.2766 8.27664 19.2 9.60001 19.2C10.9234 19.2 12 20.2766 12 21.6C12 22.9233 10.9234 24 9.60001 24ZM9.60001 20.4C8.93832 20.4 8.40001 20.9383 8.40001 21.6C8.40001 22.2616 8.93832 22.8 9.60001 22.8C10.2617 22.8 10.8 22.2616 10.8 21.6C10.8 20.9383 10.2617 20.4 9.60001 20.4Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M18 24C16.6766 24 15.6 22.9233 15.6 21.6C15.6 20.2766 16.6766 19.2 18 19.2C19.3234 19.2 20.4 20.2766 20.4 21.6C20.4 22.9233 19.3234 24 18 24ZM18 20.4C17.3383 20.4 16.8 20.9383 16.8 21.6C16.8 22.2616 17.3383 22.8 18 22.8C18.6617 22.8 19.2 22.2616 19.2 21.6C19.2 20.9383 18.6617 20.4 18 20.4Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M21.0474 5.35978C20.746 5.00397 20.2913 4.7999 19.8 4.7999H5.10831L4.98913 4.08492C4.83163 3.14004 3.95793 2.3999 3.00001 2.3999H1.80001C1.46865 2.3999 1.20001 2.66854 1.20001 2.9999C1.20001 3.33126 1.46865 3.5999 1.80001 3.5999H3.00001C3.3685 3.5999 3.74488 3.91872 3.80547 4.28221L5.81092 16.3149C5.96837 17.2598 6.8421 17.9999 7.79999 17.9999H19.8C20.1314 17.9999 20.4 17.7313 20.4 17.3999C20.4 17.0685 20.1314 16.7999 19.8 16.7999H7.79999C7.4315 16.7999 7.05512 16.4811 6.99454 16.1176L6.69852 14.3414L18.6565 13.3016C19.5867 13.2207 20.4355 12.4359 20.5891 11.5149L21.3945 6.68221C21.4753 6.1976 21.3488 5.71558 21.0474 5.35978H21.0474ZM20.2109 6.48492L19.4054 11.3176C19.3422 11.6969 18.9357 12.0728 18.5525 12.1061L6.50066 13.1541L5.3083 5.99993H19.8C19.9399 5.99993 20.0577 6.04807 20.1318 6.13544C20.2058 6.22286 20.2339 6.34694 20.2109 6.48494L20.2109 6.48492Z"
+                  fill="currentColor"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_15">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="cart-number">0</p>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- SEARCH FORM -->
+    <div class="search-form-wrapper">
+      <form class="search-form-header">
+        <input type="text" placeholder="Search" />
+        <input type="submit" value="Search" id="search-input" />
+        <label class="search-label" for="search-input">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.3359 18.2109L14.7344 13.6094C15.875 12.2188 16.5625 10.4375 16.5625 8.49609C16.5625 4.04297 12.9492 0.429688 8.49609 0.429688C4.03906 0.429688 0.429688 4.04297 0.429688 8.49609C0.429688 12.9492 4.03906 16.5625 8.49609 16.5625C10.4375 16.5625 12.2148 15.8789 13.6055 14.7383L18.207 19.3359C18.5195 19.6484 19.0234 19.6484 19.3359 19.3359C19.6484 19.0273 19.6484 18.5195 19.3359 18.2109ZM8.49609 14.957C4.92969 14.957 2.03125 12.0586 2.03125 8.49609C2.03125 4.93359 4.92969 2.03125 8.49609 2.03125C12.0586 2.03125 14.9609 4.93359 14.9609 8.49609C14.9609 12.0586 12.0586 14.957 8.49609 14.957Z"
+              fill="currentColor"
+            />
+          </svg>
+        </label>
+      </form>
+    </div>
+    <!-- END OF SEARCH FORM -->
+    <main>
+      <div class="wrapper">
+        <h2 id="prod-title"></h2>
+        <div class="content">
+          <div class="left">
+            <img id="prod-img" />
+          </div>
+          <div class="right">
+            <div class="buy">
+              <h4>Price</h4>
+              <div class="lin-1">
+                <h2 id="prod-price"></h2>
+                <h3>IN STOCK</h3>
+              </div>
+              <label><h4>Quantity:</h4></label>
+              <div class="quantity">
+                <button id="decrease"><</button>
+                <input
+                  type="number"
+                  min="1"
+                  value="1"
+                  class="num-inp"
+                  onKeyDown="return false"
+                />
+                <button id="increase">></button>
+              </div>
+              <button id="add-to-cart">ADD TO CART</button>
+            </div>
+            <ul>
+              <li>
+                <img src="../assets/icons8-checkmark.svg" />
+                <p class="ben">FREE RETURNS IF YOU DONT LIKE THE PRODUCT</p>
+              </li>
+              <li>
+                <img src="../assets/icons8-checkmark.svg" />
+                <p class="ben">100% LICENSED AND ORIGINAL PRODUCTS</p>
+              </li>
+              <li>
+                <img src="../assets/icons8-checkmark.svg" />
+                <p class="ben">
+                  OVER 100.000 HAPPY CLIENTS, AND THE NUMBER IS GROWING
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="description">
+          <h3>DESCRIPTION</h3>
+          <p id="prod-desc"></p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-wrap">
+        <div class="section-1">
+          <a href="../index.html"
+            ><img
+              src="../assets/icones-de-poisson-bleu.png"
+              alt="logo"
+              class="footer-logo"
+              style="
+                width: 150px;
+                filter: brightness(0) saturate(100%) invert(28%) sepia(91%)
+                  saturate(1158%) hue-rotate(174deg) brightness(101%)
+                  contrast(101%);
+                height: 140px;
+              "
+          /></a>
+          <div class="footer_address">
+            <p>685 Market Street</p>
+            <p>United States</p>
+          </div>
+          <div class="footer_contact">
+            <p>Call us:1.800.000.6690</p>
+            <p>Email: contact@bluefish.com</p>
+          </div>
+        </div>
+        <div class="section_2">
+          <h3>Newsletter Sign Up</h3>
+          <p>Receive our latest updates about our products and promotions.</p>
+          <form id="newsletter">
+            <input type="email" placeholder="Email" required />
+            <button type="submit">Subscribe Now</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+    <script type="module" src="product.js"></script>
+  </body>
+</html>
