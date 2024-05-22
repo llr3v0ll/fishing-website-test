@@ -350,7 +350,8 @@
     <script>
       const button = document.querySelector("#shopnow");
       button.addEventListener("click", () => {
-        window.location.pathname = "src/catalog.html";
+       const url = window.location.href;
+  window.location.pathname = `${url.split("/")[2]}/src/catalog.html`;
       });
 
       const allProd = document.querySelectorAll(".prod-card");
