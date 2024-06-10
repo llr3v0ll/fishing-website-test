@@ -253,11 +253,15 @@ h3 {
   color: #0077b6;
 }
 /* ANIMATIONS ---------------------------------- */
-@keyframes slideIn {
-  from {
-    opacity: 0.01;
-  }
-  to {
-    opacity: 1;
-  }
+
+.reveal {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0%;
+  transition: all 1.5s ease;
+}
+
+.reveal.ani-active {
+  transform: translateY(0px);
+  opacity: 1;
 }

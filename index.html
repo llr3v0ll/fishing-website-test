@@ -175,7 +175,7 @@
           </div>
         </div>
       </div>
-      <div class="collection">
+      <div class="collection reveal">
         <h2>NEW ARRIVALS</h2>
         <div class="products">
           <div class="prod-card">
@@ -224,7 +224,7 @@
           </div>
         </div>
       </div>
-      <div class="cat-collection">
+      <div class="cat-collection reveal">
         <a
           href="src/customer-favorites.html"
           class="collection-card col-card-1"
@@ -241,7 +241,7 @@
           <p>LIMITED EDITION</p>
         </a>
       </div>
-      <div class="description">
+      <div class="description reveal">
         <div class="desc-wrapper">
           <section>
             <h3>Our Passion for Fishing</h3>
@@ -350,14 +350,14 @@
     <script>
       const button = document.querySelector("#shopnow");
       button.addEventListener("click", () => {
-      const url = window.location.href.split("/");
-      var realUrl = "";
-      url.forEach((itm, index)=>{
-        if(itm.includes("github")){
-          realUrl = url[index+1];
-        }
-      })
-      window.location.pathname = `${realUrl}/src/catalog.html`;
+        const url = window.location.href.split("/");
+        var realUrl = "";
+        url.forEach((itm, index) => {
+          if (itm.includes("github")) {
+            realUrl = url[index + 1];
+          }
+        });
+        window.location.pathname = `${realUrl}/src/catalog.html`;
       });
 
       const allProd = document.querySelectorAll(".prod-card");
@@ -377,6 +377,24 @@
           updateCartNum();
         });
       });
+
+      // RENDER IN ANIMATION
+
+      window.addEventListener("scroll", reveal);
+
+      function reveal() {
+        let itmsToReveal = document.querySelectorAll(".reveal");
+        itmsToReveal.forEach((itm) => {
+          let windowheigth = window.innerHeight;
+          let revealTop = itm.getBoundingClientRect().top;
+          console.log(revealTop);
+          let revealPoint = 75;
+
+          if (revealTop < windowheigth - revealPoint) {
+            itm.classList.add("ani-active");
+          }
+        });
+      }
     </script>
   </body>
 </html>
